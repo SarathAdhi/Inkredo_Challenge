@@ -1,0 +1,50 @@
+.quotes-page {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.question {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px 10px;
+    border-radius: 20px;
+    margin: 5px;
+    border: 2px solid black;
+}
+.answer {
+    display: none;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.quotes-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.quotes-section div {
+    top: 400px;
+    position: absolute;
+}
+.quotes-section button {
+    padding: 10px 15px;
+    margin: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+.quotes-section button:hover {
+    border-radius: 20px;
+    background-color: greenyellow;
+}

@@ -1,0 +1,120 @@
+.episodes-page {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.search-character-episodes {
+    text-align: center;
+    width: 250px;
+    font-size: 15px;
+    margin-bottom: 30px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 2px solid purple;
+    transition: all .3s ease-in-out;
+}
+.search-character-episodes:focus {
+    width: 350px;
+    border-color: transparent;
+    border-color: #58a6ff;
+    outline: none;
+    border: 2px solid purple;
+    box-shadow: white 5px 5px 50px;
+}
+.all-episodes-cards {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.season-name {
+    width: 100%;
+    margin: 20px 0px;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    font-weight: 600;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 20px;
+    padding: 5px 0px;
+}
+.episode-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 380px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 20px;
+    line-height: 10px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.episode-card:hover {
+    transform: scale(1.1);
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid purple;
+    box-shadow: rgba(255, 255, 255, 0.5) 10px 10px 10px;
+
+}
+.episode-card div h1 {
+    margin-bottom: 50px;
+}
+.episode-card div h3 {
+    line-height: 25px;
+}
+.characters-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 120px;
+}
+.characters-image img {
+    width: 50px;
+    height: 50px;
+    margin: 2px 2px;
+    border-radius: 100%;
+    border: 2px solid purple;
+}
+.character-description:hover p {
+    display: block;
+    text-align: center;
+    margin-left: -20px;
+    margin-top: 5px;
+    background-color: white;
+    border: 2px solid rgb(72, 0, 255);
+    padding: 5px 5px;
+    color: black;
+    border-radius: 5px;
+    line-height: 15px;
+}
+.character-description p {
+    position: absolute;
+    display: none;
+}
+
+@media only screen and (max-width: 420px) {
+    .episode-card {
+        width: 98%;
+        margin: 15px 0px;
+        padding: 10px 5px;
+        height: auto;
+    }
+    .episode-card div h2 {
+        line-height: 30px;
+    }
+}
